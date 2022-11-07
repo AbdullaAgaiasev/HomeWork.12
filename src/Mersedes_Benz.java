@@ -2,9 +2,9 @@ public class Mersedes_Benz extends Car{
     private ColorCar colorCar;
     private int Model;
     private String Salon;
-    private Driver1 driver;
+    private String driver;
 
-    public Driver1 getDriver(String name) {
+    public String getDriver(String name) {
         return this.driver;
     }
 
@@ -33,18 +33,18 @@ public class Mersedes_Benz extends Car{
         System.out.println(music);
     }
     public void makeNoise() {
-        System.out.println("Отстрелы из выхлопа");
+        System.out.println("Отстрелы из выхлопа" + "\n            ");
     }
     public void makeNoise(String noise){
         System.out.println(noise);
     }
 
-    public Mersedes_Benz(ColorCar colorCar, int model, String salon, Driver1 driver1) {
-        super(colorCar, model, salon, new Driver1("Dominik"));
+    public Mersedes_Benz(ColorCar colorCar, int model, String salon, String name) {
+        super(colorCar, model, salon, name);
         this.colorCar = colorCar;
         this.Model = model;
         this.Salon = salon;
-        this.driver = new Driver1 ("Dominik");
+        this.driver = name;
 
 
     }

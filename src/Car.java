@@ -1,6 +1,6 @@
 public abstract class Car {
     private int output;
-    private int Kuzov;
+    private int  Kuzov;
     private String color;
 
     public int getOutput() {
@@ -15,7 +15,7 @@ public abstract class Car {
         return color;
     }
 
-    public Car(ColorCar output, int kuzov, String salon, Driver1 color) {
+    public Car(ColorCar output, int kuzov, String salon, String color) {
         this.output = output.ordinal();
         this.Kuzov = kuzov;
         this.color = String.valueOf(color);
